@@ -40,11 +40,11 @@ ENV PUSH_IOS_BUNDLE_ID='com.quanlabs.nearme5'
 
 ENV MAX_REQUEST_SIZE='20mb'
 ENV DOKKU_LETSENCRYPT_EMAIL='dev@quanlabs.com'
-
+ENV PUBLIC_SERVER_URL= 'http://157.245.1.133:1337'
 # Generate an encrypted password for your parse dashboard user
 # https://bcrypt-generator.com/
 ENV PARSE_DASHBOARD_USER='admin'
-ENV PARSE_DASHBOARD_PASS='$2y$12$FjjhORnNdorLBNbkhVTP0e..HwP3fRKov9wYmo.2mGsJ4y96AviZm'
+ENV PARSE_DASHBOARD_PASS='$2y$12$BhniVsyPxK4bMd91URESP.6fNAcK8.L4OKvhgNGj4b6QsSnXs6Nqa'
 
 ENV PARSE_DASHBOARD_USER_READ_ONLY 'admin1'
 ENV PARSE_DASHBOARD_PASS_READ_ONLY '$2y$12$6b7CuxcN7oZ4tkd7iQetOOdJOaVDajPiDrq2tjfxo0QP7DEbcirKW'
