@@ -48,3 +48,4 @@ ENV PARSE_DASHBOARD_PASS='$2y$12$BhniVsyPxK4bMd91URESP.6fNAcK8.L4OKvhgNGj4b6QsSn
 
 ENV PARSE_DASHBOARD_USER_READ_ONLY 'admin1'
 ENV PARSE_DASHBOARD_PASS_READ_ONLY '$2y$12$6b7CuxcN7oZ4tkd7iQetOOdJOaVDajPiDrq2tjfxo0QP7DEbcirKW'
+ENV MONGO_URL='mongodb+srv://admin:jm1bCymMP7QtzqIi@placesapp-fuswh.mongodb.net/places?retryWrites=true&w=majority'
