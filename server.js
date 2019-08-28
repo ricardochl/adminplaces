@@ -1,6 +1,7 @@
 if (process.env.NEW_RELIC_LICENSE_KEY) require('newrelic')
 if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
+const PORT = process.env.PORT || 5000;
 const express = require('express')
 const ParseServer = require('parse-server').ParseServer
 const ParseDashboard = require('parse-dashboard')
@@ -144,6 +145,6 @@ app.use(require('./controllers'))
 require('./jobs/expire-places');
 
 const httpServer = require('http').createServer(app)
-httpServer.listen(process.env.PORT, () => {
-  console.log(process.env.APP_NAME + ' running on port ' + process.env.PORT + '.')
+httpServer.listen(PORT, () => {
+  console.log(process.env.APP_NAME + ' running on port ' + PORT + '.')
 })
